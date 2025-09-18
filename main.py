@@ -4,11 +4,13 @@ import string
 import os
 import math
 
+numcr = int(input("input cols number (also rows)"))
+
 
 def generate_masked_text_images(
         message,
-        cols=9,
-        rows=9,
+        cols=numcr,
+        rows=numcr,
         font_path=None,
         font_size=36,
         spacing=0,
@@ -106,7 +108,7 @@ def generate_masked_text_images(
 
 
 if __name__ == "__main__":
-    secret = input("Enter secret message (1-9 chars): ")
+    secret = input(f"Enter secret message (1-{numcr} chars): ")
     generate_masked_text_images(
         secret,
         font_path="arial.ttf",
