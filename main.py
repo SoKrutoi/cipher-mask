@@ -4,7 +4,7 @@ import string
 import os
 import math
 
-numcr = int(input("input cols number (also rows)"))
+numcr = int(input("input cols number (also rows. for nice work type >5 number)"))
 
 
 def generate_masked_text_images(
